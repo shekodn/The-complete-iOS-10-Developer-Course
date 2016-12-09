@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46CDDCDF1DFB2DAC00567A2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CDDCDE1DFB2DAC00567A2C /* AppDelegate.swift */; };
+		46CDDCE11DFB2DAC00567A2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CDDCE01DFB2DAC00567A2C /* ViewController.swift */; };
+		46CDDCE41DFB2DAC00567A2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46CDDCE21DFB2DAC00567A2C /* Main.storyboard */; };
+		46CDDCE61DFB2DAC00567A2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46CDDCE51DFB2DAC00567A2C /* Assets.xcassets */; };
+		46CDDCE91DFB2DAC00567A2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46CDDCE71DFB2DAC00567A2C /* LaunchScreen.storyboard */; };
+		46CDDCF41DFB2DAC00567A2C /* What_s_the_watherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CDDCF31DFB2DAC00567A2C /* What_s_the_watherTests.swift */; };
+		46CDDCFF1DFB2DAC00567A2C /* What_s_the_watherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CDDCFE1DFB2DAC00567A2C /* What_s_the_watherUITests.swift */; };
+		46EEB19F1DFB349300CFCE8C /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46EEB19E1DFB349300CFCE8C /* background.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46CDDCF01DFB2DAC00567A2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46CDDCD31DFB2DAC00567A2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46CDDCDA1DFB2DAC00567A2C;
+			remoteInfo = "What's the wather";
+		};
+		46CDDCFB1DFB2DAC00567A2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46CDDCD31DFB2DAC00567A2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46CDDCDA1DFB2DAC00567A2C;
+			remoteInfo = "What's the wather";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		46CDDCDB1DFB2DAC00567A2C /* What's the wather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "What's the wather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46CDDCDE1DFB2DAC00567A2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		46CDDCE01DFB2DAC00567A2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		46CDDCE31DFB2DAC00567A2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46CDDCE51DFB2DAC00567A2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46CDDCE81DFB2DAC00567A2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		46CDDCEA1DFB2DAC00567A2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46CDDCEF1DFB2DAC00567A2C /* What's the watherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "What's the watherTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46CDDCF31DFB2DAC00567A2C /* What_s_the_watherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = What_s_the_watherTests.swift; sourceTree = "<group>"; };
+		46CDDCF51DFB2DAC00567A2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46CDDCFA1DFB2DAC00567A2C /* What's the watherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "What's the watherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46CDDCFE1DFB2DAC00567A2C /* What_s_the_watherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = What_s_the_watherUITests.swift; sourceTree = "<group>"; };
+		46CDDD001DFB2DAC00567A2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46EEB19E1DFB349300CFCE8C /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46CDDCD81DFB2DAC00567A2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46CDDCEC1DFB2DAC00567A2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46CDDCF71DFB2DAC00567A2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46CDDCD21DFB2DAC00567A2C = {
+			isa = PBXGroup;
+			children = (
+				46CDDCDD1DFB2DAC00567A2C /* What's the wather */,
+				46CDDCF21DFB2DAC00567A2C /* What's the watherTests */,
+				46CDDCFD1DFB2DAC00567A2C /* What's the watherUITests */,
+				46CDDCDC1DFB2DAC00567A2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46CDDCDC1DFB2DAC00567A2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46CDDCDB1DFB2DAC00567A2C /* What's the wather.app */,
+				46CDDCEF1DFB2DAC00567A2C /* What's the watherTests.xctest */,
+				46CDDCFA1DFB2DAC00567A2C /* What's the watherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46CDDCDD1DFB2DAC00567A2C /* What's the wather */ = {
+			isa = PBXGroup;
+			children = (
+				46CDDCDE1DFB2DAC00567A2C /* AppDelegate.swift */,
+				46CDDCE01DFB2DAC00567A2C /* ViewController.swift */,
+				46CDDCE21DFB2DAC00567A2C /* Main.storyboard */,
+				46EEB19E1DFB349300CFCE8C /* background.jpg */,
+				46CDDCE51DFB2DAC00567A2C /* Assets.xcassets */,
+				46CDDCE71DFB2DAC00567A2C /* LaunchScreen.storyboard */,
+				46CDDCEA1DFB2DAC00567A2C /* Info.plist */,
+			);
+			path = "What's the wather";
+			sourceTree = "<group>";
+		};
+		46CDDCF21DFB2DAC00567A2C /* What's the watherTests */ = {
+			isa = PBXGroup;
+			children = (
+				46CDDCF31DFB2DAC00567A2C /* What_s_the_watherTests.swift */,
+				46CDDCF51DFB2DAC00567A2C /* Info.plist */,
+			);
+			path = "What's the watherTests";
+			sourceTree = "<group>";
+		};
+		46CDDCFD1DFB2DAC00567A2C /* What's the watherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				46CDDCFE1DFB2DAC00567A2C /* What_s_the_watherUITests.swift */,
+				46CDDD001DFB2DAC00567A2C /* Info.plist */,
+			);
+			path = "What's the watherUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46CDDCDA1DFB2DAC00567A2C /* What's the wather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46CDDD031DFB2DAC00567A2C /* Build configuration list for PBXNativeTarget "What's the wather" */;
+			buildPhases = (
+				46CDDCD71DFB2DAC00567A2C /* Sources */,
+				46CDDCD81DFB2DAC00567A2C /* Frameworks */,
+				46CDDCD91DFB2DAC00567A2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "What's the wather";
+			productName = "What's the wather";
+			productReference = 46CDDCDB1DFB2DAC00567A2C /* What's the wather.app */;
+			productType = "com.apple.product-type.application";
+		};
+		46CDDCEE1DFB2DAC00567A2C /* What's the watherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46CDDD061DFB2DAC00567A2C /* Build configuration list for PBXNativeTarget "What's the watherTests" */;
+			buildPhases = (
+				46CDDCEB1DFB2DAC00567A2C /* Sources */,
+				46CDDCEC1DFB2DAC00567A2C /* Frameworks */,
+				46CDDCED1DFB2DAC00567A2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46CDDCF11DFB2DAC00567A2C /* PBXTargetDependency */,
+			);
+			name = "What's the watherTests";
+			productName = "What's the watherTests";
+			productReference = 46CDDCEF1DFB2DAC00567A2C /* What's the watherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		46CDDCF91DFB2DAC00567A2C /* What's the watherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46CDDD091DFB2DAC00567A2C /* Build configuration list for PBXNativeTarget "What's the watherUITests" */;
+			buildPhases = (
+				46CDDCF61DFB2DAC00567A2C /* Sources */,
+				46CDDCF71DFB2DAC00567A2C /* Frameworks */,
+				46CDDCF81DFB2DAC00567A2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46CDDCFC1DFB2DAC00567A2C /* PBXTargetDependency */,
+			);
+			name = "What's the watherUITests";
+			productName = "What's the watherUITests";
+			productReference = 46CDDCFA1DFB2DAC00567A2C /* What's the watherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46CDDCD31DFB2DAC00567A2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Sergio Díaz Navarro";
+				TargetAttributes = {
+					46CDDCDA1DFB2DAC00567A2C = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					46CDDCEE1DFB2DAC00567A2C = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 46CDDCDA1DFB2DAC00567A2C;
+					};
+					46CDDCF91DFB2DAC00567A2C = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 46CDDCDA1DFB2DAC00567A2C;
+					};
+				};
+			};
+			buildConfigurationList = 46CDDCD61DFB2DAC00567A2C /* Build configuration list for PBXProject "What's the wather" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46CDDCD21DFB2DAC00567A2C;
+			productRefGroup = 46CDDCDC1DFB2DAC00567A2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46CDDCDA1DFB2DAC00567A2C /* What's the wather */,
+				46CDDCEE1DFB2DAC00567A2C /* What's the watherTests */,
+				46CDDCF91DFB2DAC00567A2C /* What's the watherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46CDDCD91DFB2DAC00567A2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46CDDCE91DFB2DAC00567A2C /* LaunchScreen.storyboard in Resources */,
+				46EEB19F1DFB349300CFCE8C /* background.jpg in Resources */,
+				46CDDCE61DFB2DAC00567A2C /* Assets.xcassets in Resources */,
+				46CDDCE41DFB2DAC00567A2C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46CDDCED1DFB2DAC00567A2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46CDDCF81DFB2DAC00567A2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46CDDCD71DFB2DAC00567A2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46CDDCE11DFB2DAC00567A2C /* ViewController.swift in Sources */,
+				46CDDCDF1DFB2DAC00567A2C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46CDDCEB1DFB2DAC00567A2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46CDDCF41DFB2DAC00567A2C /* What_s_the_watherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46CDDCF61DFB2DAC00567A2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46CDDCFF1DFB2DAC00567A2C /* What_s_the_watherUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46CDDCF11DFB2DAC00567A2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46CDDCDA1DFB2DAC00567A2C /* What's the wather */;
+			targetProxy = 46CDDCF01DFB2DAC00567A2C /* PBXContainerItemProxy */;
+		};
+		46CDDCFC1DFB2DAC00567A2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46CDDCDA1DFB2DAC00567A2C /* What's the wather */;
+			targetProxy = 46CDDCFB1DFB2DAC00567A2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		46CDDCE21DFB2DAC00567A2C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46CDDCE31DFB2DAC00567A2C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		46CDDCE71DFB2DAC00567A2C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46CDDCE81DFB2DAC00567A2C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46CDDD011DFB2DAC00567A2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		46CDDD021DFB2DAC00567A2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46CDDD041DFB2DAC00567A2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "What's the wather/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sdn.What-s-the-wather";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		46CDDD051DFB2DAC00567A2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "What's the wather/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sdn.What-s-the-wather";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		46CDDD071DFB2DAC00567A2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "What's the watherTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sdn.What-s-the-watherTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/What's the wather.app/What's the wather";
+			};
+			name = Debug;
+		};
+		46CDDD081DFB2DAC00567A2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "What's the watherTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sdn.What-s-the-watherTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/What's the wather.app/What's the wather";
+			};
+			name = Release;
+		};
+		46CDDD0A1DFB2DAC00567A2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "What's the watherUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sdn.What-s-the-watherUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "What's the wather";
+			};
+			name = Debug;
+		};
+		46CDDD0B1DFB2DAC00567A2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "What's the watherUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sdn.What-s-the-watherUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "What's the wather";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46CDDCD61DFB2DAC00567A2C /* Build configuration list for PBXProject "What's the wather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46CDDD011DFB2DAC00567A2C /* Debug */,
+				46CDDD021DFB2DAC00567A2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46CDDD031DFB2DAC00567A2C /* Build configuration list for PBXNativeTarget "What's the wather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46CDDD041DFB2DAC00567A2C /* Debug */,
+				46CDDD051DFB2DAC00567A2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46CDDD061DFB2DAC00567A2C /* Build configuration list for PBXNativeTarget "What's the watherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46CDDD071DFB2DAC00567A2C /* Debug */,
+				46CDDD081DFB2DAC00567A2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46CDDD091DFB2DAC00567A2C /* Build configuration list for PBXNativeTarget "What's the watherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46CDDD0A1DFB2DAC00567A2C /* Debug */,
+				46CDDD0B1DFB2DAC00567A2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46CDDCD31DFB2DAC00567A2C /* Project object */;
+}
