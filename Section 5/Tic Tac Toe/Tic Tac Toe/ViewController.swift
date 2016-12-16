@@ -50,29 +50,6 @@ class ViewController: UIViewController {
     }
     
     
-//    func isTied( tie : Bool) -> Bool{
-//        
-//        //        var isTied = true
-//        //
-//        //        for i in gameState{
-//        //            
-//        //            if gameState[i] == 0{
-//        //                isTied = false
-//        //                print("is NOT tied")
-//        //                break
-//        //            }
-//        //        }
-//        //        
-//        //        print("")
-//        //        
-//        //        if(isTied){
-//        //            print("is tied")
-//        //            
-//        //        }
-//        
-//        return tie
-//    }
-    
     func hiddenLabels(){
         
         UIView.animate(withDuration:1, animations:{
