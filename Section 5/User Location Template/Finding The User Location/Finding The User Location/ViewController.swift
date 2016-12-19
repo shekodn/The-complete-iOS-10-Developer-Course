@@ -35,26 +35,61 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
         let userLocation: CLLocation = locations[0]
-
-        let latitude = userLocation.coordinate.latitude
+        CLGeocoder().reverseGeocodeLocation(userLocation){(placemarks, error) in
         
-        let longitude = userLocation.coordinate.longitude
+            if error != nil{
+                print(error)
+            } else{
+               
+                if let placemark = placemarks?[0]{
+                    
+                    var subThroughFare = ""
+                    
+                    if placemark.subThoroughfare != nil {
+                        
+                        subThroughFare = placemark.subThoroughfare!
+                    }
+                    
+                    var throughFare = ""
+                    
+                    if placemark.thoroughfare != nil{
         
-        let latDelta: CLLocationDegrees = 0.05
-        
-        let lonDelta: CLLocationDegrees = 0.05
-        
-        let span = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: lonDelta)
-        
-        let location = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-        
-        let region = MKCoordinateRegion(center: location, span: span)
-        
-        self.map.setRegion(region, animated: true)
-        
-        
+                        throughFare = placemark.thoroughfare!
+                    }
+                    
+                    var subLocality = ""
+                    
+                    if placemark.subLocality != nil{
+                        
+                        subLocality = placemark.subLocality!
+                    }
+                    
+                    var subAdministrativeArea = ""
+                    
+                    if placemark.subAdministrativeArea != nil{
+                        
+                        subAdministrativeArea = placemark.subAdministrativeArea!
+                    }
+                    
+                    var postalCode = ""
+                    
+                    if placemark.postalCode != nil{
+                        
+                        postalCode = placemark.postalCode!
+                    }
+                    
+                    var country = ""
+                    
+                    if placemark.country != nil{
+                        
+                        country = placemark.country!
+                    }
+                    
+                    print(subThroughFare + throughFare + "\n" + subLocality + "\n" + subAdministrativeArea + "\n" + postalCode + "\n" + country)
+                    
+                }
+            }
+        }
     }
-    
-
 }
 
