@@ -208,6 +208,7 @@
 				TargetAttributes = {
 					4600DDB61DFF475600A90782 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 5D6S47J43L;
 						ProvisioningStyle = Automatic;
 					};
 					4600DDCA1DFF475700A90782 = {
@@ -430,6 +431,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5D6S47J43L;
 				INFOPLIST_FILE = "Tic Tac Toe/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sdn.Tic-Tac-Toe";
@@ -442,6 +444,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5D6S47J43L;
 				INFOPLIST_FILE = "Tic Tac Toe/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sdn.Tic-Tac-Toe";
