@@ -32,9 +32,25 @@ class ViewController: UIViewController {
                             
                             let jsonResult = try JSONSerialization.jsonObject(with: urlContent, options: JSONSerialization.ReadingOptions.mutableContainers) as AnyObject
                             
-                            //print(jsonResult)
+                            print(jsonResult)
                             
                             //print(jsonResult["name"])
+                            
+                            if var country = ((jsonResult["sys"] as? NSArray)?[0] as? NSDictionary)?["country"] as? String {
+                                
+                                DispatchQueue.main.sync(execute: {
+                                    
+                                    
+                                    if country != nil{
+                                        
+                                        self.weatherLabel.text = "The weather in " + country + ": " + "\n"
+                                        //print(jsonResult["name"])
+
+                                        
+                                    }
+                                    
+                                })
+                            }
                             
                             
                             
@@ -44,7 +60,8 @@ class ViewController: UIViewController {
                                     
                                     if description != nil{
                                         
-                                        self.weatherLabel.text = "The weather in " + city + ": " + "\n" + description
+                                        self.weatherLabel.text! += description + "\n"
+
                                     } else{
                                         
                                         self.weatherLabel.text = "Couldn't find weather for " + city + ". Please try another"
