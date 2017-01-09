@@ -59,13 +59,13 @@ class ViewController: UIViewController {
         view.addSubview(activityIndicator)
         activityIndicator.startAnimating()
         
-        UIApplication.shared.beginIgnoringInteractionEvents()
+        //UIApplication.shared.beginIgnoringInteractionEvents()
     }
     
     @IBAction func restoreApp(_ sender: Any) {
     
         activityIndicator.stopAnimating()
-        UIApplication.shared.endIgnoringInteractionEvents()
+        //UIApplication.shared.endIgnoringInteractionEvents()
 
 
     }
