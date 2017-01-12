@@ -81,9 +81,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="129.98500749625188"/>
+            <point key="canvasLocation" x="1415" y="880"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Users-->
         <scene sceneID="TO0-Y4-eak">
             <objects>
                 <tableViewController storyboardIdentifier="asdf" id="1a7-eu-NtM" customClass="UserTableViewController" customModule="ParseStarterProject_Swift" customModuleProvider="target" sceneMemberID="viewController">
@@ -106,13 +106,16 @@
                             <outlet property="delegate" destination="1a7-eu-NtM" id="ZEF-To-xFp"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="7Y1-VH-QxA">
+                    <navigationItem key="navigationItem" title="Users" id="7Y1-VH-QxA">
                         <barButtonItem key="rightBarButtonItem" title="Logout" id="HSg-R8-iKS">
                             <connections>
                                 <action selector="logout:" destination="1a7-eu-NtM" id="wIT-72-ULP"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="logoutSegue" id="l77-GU-JEN"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qfH-PT-eMO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -128,7 +131,6 @@
                     </navigationBar>
                     <connections>
                         <segue destination="1a7-eu-NtM" kind="relationship" relationship="rootViewController" id="1Hg-wW-E9c"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="logoutSegue" id="zZG-g3-qFh"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HLj-tJ-cxD" userLabel="First Responder" sceneMemberID="firstResponder"/>

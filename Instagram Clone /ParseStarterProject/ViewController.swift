@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         }))
         
         self.present(alert, animated: true, completion: nil)
-    
+        
     }
     
     @IBAction func signupOrLogin(_ sender: AnyObject) {
@@ -48,7 +48,7 @@ class ViewController: UIViewController {
                 activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
                 view.addSubview(activityIndicator)
                 activityIndicator.startAnimating()
-                UIApplication.shared.beginIgnoringInteractionEvents() // UIApplication.shared() is now UIApplication.shared
+                UIApplication.shared.beginIgnoringInteractionEvents()
             
             if signupMode {
                 
@@ -60,16 +60,16 @@ class ViewController: UIViewController {
                 user.email = emailTextField.text
                 user.password = passwordTextField.text
                 
-                user.signUpInBackground(block: { (success, error) in
+                user.signUpInBackground(block: { (success, error) in // user.signUpInBackground({ (success, error) is now user.signUpInBackground(block: { (success, error)
                     
                     self.activityIndicator.stopAnimating()
-                    UIApplication.shared.endIgnoringInteractionEvents() // UIApplication.shared() is now  UIApplication.shared
+                    UIApplication.shared.endIgnoringInteractionEvents()
                     
                     if error != nil {
                         
                         var displayErrorMessage = "Please try again later."
                         
-                        let error = error as NSError?
+                        let error = error as? NSError
                         
                         if let errorMessage = error?.userInfo["error"] as? String {
                             
@@ -82,6 +82,8 @@ class ViewController: UIViewController {
                     } else {
                         
                         print("user signed up")
+                        
+                        self.performSegue(withIdentifier: "showUserTable", sender: self)
                     
                     }
                     
@@ -96,7 +98,7 @@ class ViewController: UIViewController {
                 PFUser.logInWithUsername(inBackground: emailTextField.text!, password: passwordTextField.text!, block: { (user, error) in
                     
                     self.activityIndicator.stopAnimating()
-                    UIApplication.shared.endIgnoringInteractionEvents() // UIApplication.shared() is now  UIApplication.shared
+                    UIApplication.shared.endIgnoringInteractionEvents()
                     
                     if error != nil {
                         
@@ -105,7 +107,6 @@ class ViewController: UIViewController {
                         let error = error as NSError?
                         
                         if let errorMessage = error?.userInfo["error"] as? String {
-                            
                             displayErrorMessage = errorMessage
                             
                         }
@@ -116,6 +117,8 @@ class ViewController: UIViewController {
                     } else {
                         
                         print("Logged in")
+                        
+                        self.performSegue(withIdentifier: "showUserTable", sender: self)
                         
                     }
                     
@@ -168,6 +171,19 @@ class ViewController: UIViewController {
     @IBOutlet var messageLabel: UILabel!
     
     @IBOutlet var changeSignupModeButton: UIButton!
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        if PFUser.current() != nil {
+            
+            performSegue(withIdentifier: "showUserTable", sender: self)
+            
+        }
+        
+        self.navigationController?.navigationBar.isHidden = true
+        
+    }
     
     
     override func viewDidLoad() {
