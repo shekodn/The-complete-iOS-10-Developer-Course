@@ -111,6 +111,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         installation.saveInBackground()
 
         PFPush.subscribeToChannel(inBackground: "") { (succeeded, error) in // (succeeded: Bool, error: NSError?) is now (succeeded, error)
+            
             if succeeded {
                 print("ParseStarterProject successfully subscribed to push notifications on the broadcast channel.\n");
             } else {

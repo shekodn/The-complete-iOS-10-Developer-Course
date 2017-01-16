@@ -48,7 +48,8 @@ class ViewController: UIViewController {
                 activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
                 view.addSubview(activityIndicator)
                 activityIndicator.startAnimating()
-                UIApplication.shared.beginIgnoringInteractionEvents()
+                UIApplication.shared.beginIgnoringInteractionEvents() // UIApplication.shared() is now UIApplication.shared
+
             
             if signupMode {
                 
@@ -60,7 +61,7 @@ class ViewController: UIViewController {
                 user.email = emailTextField.text
                 user.password = passwordTextField.text
                 
-                user.signUpInBackground(block: { (success, error) in // user.signUpInBackground({ (success, error) is now user.signUpInBackground(block: { (success, error)
+                user.signUpInBackground(block: { (success, error) in
                     
                     self.activityIndicator.stopAnimating()
                     UIApplication.shared.endIgnoringInteractionEvents()
@@ -69,7 +70,7 @@ class ViewController: UIViewController {
                         
                         var displayErrorMessage = "Please try again later."
                         
-                        let error = error as? NSError
+                        let error = error as NSError?
                         
                         if let errorMessage = error?.userInfo["error"] as? String {
                             
@@ -98,7 +99,8 @@ class ViewController: UIViewController {
                 PFUser.logInWithUsername(inBackground: emailTextField.text!, password: passwordTextField.text!, block: { (user, error) in
                     
                     self.activityIndicator.stopAnimating()
-                    UIApplication.shared.endIgnoringInteractionEvents()
+                    UIApplication.shared.endIgnoringInteractionEvents() // UIApplication.shared() is now UIApplication.shared
+
                     
                     if error != nil {
                         
@@ -107,6 +109,7 @@ class ViewController: UIViewController {
                         let error = error as NSError?
                         
                         if let errorMessage = error?.userInfo["error"] as? String {
+                            
                             displayErrorMessage = errorMessage
                             
                         }
